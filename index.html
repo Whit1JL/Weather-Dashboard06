@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+</head>
+
+<body>
+    <main>
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="title">Weather Dashboard</h1>
+            </div>
+        </div>
+
+        <!-- weather information section -->
+
+        <div class="row">
+            <div class="col-sm-3">
+                <!-- search button for the cities -->
+                <form>
+                    <div id="city-search">
+                        <label for="form-section">Search for City:</label>
+                        <input type="text" id="cities" placeholder="Enter City Here">
+                    </div>
+                        <button type="submit" id="search">Search</button>
+                </form>
+            </div>
+
+        <!-- city list -->
+        <div class="list-group" id="#cityList"></div>
+
+        <div class="col-sm-9">
+            <div id="weatherContainer"></div>
+        </div>
+
+        <div id="searchHistory"></div>
+
+        <div id="forecast" class="row"></div>
+
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
